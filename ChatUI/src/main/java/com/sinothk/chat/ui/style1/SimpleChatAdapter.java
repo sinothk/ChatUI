@@ -1,4 +1,4 @@
-package com.sinothk.chat.ui.demo;
+package com.sinothk.chat.ui.style1;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -8,6 +8,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.sinothk.chat.ui.R;
 import com.sinothk.chat.ui.keyboard.utils.EmoticonLoader;
 
 import java.util.ArrayList;
@@ -60,7 +61,7 @@ public class SimpleChatAdapter extends BaseAdapter {
     public View getView(int i, View view, ViewGroup viewGroup) {
         ViewHolder viewHolder;
         if ( view == null ) {
-            view = LayoutInflater.from(mContext).inflate(R.layout.item_list, viewGroup, false);
+            view = LayoutInflater.from(mContext).inflate(R.layout.style_1_item_list, viewGroup, false);
             viewHolder = new ViewHolder(view);
             view.setTag(viewHolder);
         } else {

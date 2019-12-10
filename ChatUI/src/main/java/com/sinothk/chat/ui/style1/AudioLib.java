@@ -1,4 +1,4 @@
-package com.sinothk.chat.ui.demo;
+package com.sinothk.chat.ui.style1;
 
 import android.content.Context;
 import android.media.MediaPlayer;

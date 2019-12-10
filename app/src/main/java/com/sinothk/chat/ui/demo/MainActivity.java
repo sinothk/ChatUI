@@ -16,6 +16,10 @@ import androidx.core.app.ActivityCompat;
 import com.sinothk.chat.ui.keyboard.ChatKeyboardLayout;
 import com.sinothk.chat.ui.keyboard.RecordingLayout;
 import com.sinothk.chat.ui.keyboard.media.MediaBean;
+import com.sinothk.chat.ui.style1.AudioLib;
+import com.sinothk.chat.ui.style1.ChatBean;
+import com.sinothk.chat.ui.style1.LogUtil;
+import com.sinothk.chat.ui.style1.SimpleChatAdapter;
 
 import java.util.ArrayList;
 
@@ -34,7 +38,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         setSupportActionBar((Toolbar) findViewById(R.id.toolbar));
 
-        keyboardLayout = (ChatKeyboardLayout) findViewById(R.id.kv_bar);
+        keyboardLayout = findViewById(R.id.kv_bar);
 
         ArrayList<MediaBean> popupModels = new ArrayList<>();
         popupModels.add(new MediaBean(0, R.drawable.icon_camera, "拍照", this));

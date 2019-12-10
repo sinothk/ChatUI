@@ -1,4 +1,4 @@
-package com.sinothk.chat.ui.demo;
+package com.sinothk.chat.ui.style1;
 
 import android.util.Log;
 
