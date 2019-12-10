@@ -9,7 +9,7 @@
         android:layout_height="@dimen/keyboard_split_line"
         android:layout_alignParentTop="true"
         android:background="@color/keyboard_split_line" />
-    <cn.hadcn.keyboard.emoticon.view.EmoticonsTabBarView
+    <com.sinothk.chat.ui.keyboard.emoticon.view.EmoticonsTabBarView
         android:id="@+id/emoticon_page_toolbar"
         android:layout_width="match_parent"
         android:layout_height="@dimen/keyboard_emoticons_bar_height"
@@ -21,7 +21,7 @@
         android:layout_height="@dimen/keyboard_split_line"
         android:layout_above="@id/emoticon_page_toolbar"
         android:background="@color/keyboard_split_line" />
-    <cn.hadcn.keyboard.view.IndicatorView
+    <com.sinothk.chat.ui.keyboard.view.IndicatorView
         android:id="@+id/emoticon_indicator_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -29,7 +29,7 @@
         android:gravity="center"
         android:orientation="horizontal"
         android:paddingBottom="@dimen/keyboard_indicator_margin" />
-    <cn.hadcn.keyboard.emoticon.view.EmoticonsPageView
+    <com.sinothk.chat.ui.keyboard.emoticon.view.EmoticonsPageView
         android:id="@+id/emoticon_page_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
