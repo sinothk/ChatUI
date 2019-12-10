@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <item
+        android:id="@+id/action_text_only"
+        android:orderInCategory="100"
+        android:title="@string/action_text_only" />
+    <item
+        android:id="@+id/action_text_emoticon"
+        android:orderInCategory="100"
+        android:title="@string/action_text_emoticon" />
+    <item
+        android:id="@+id/action_chat_style"
+        android:orderInCategory="100"
+        android:title="@string/action_chat_style" />
+</menu>
