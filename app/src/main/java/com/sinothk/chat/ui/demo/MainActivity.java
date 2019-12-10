@@ -19,7 +19,6 @@ import com.sinothk.chat.ui.keyboard.media.MediaBean;
 import com.sinothk.chat.ui.style1.AudioLib;
 import com.sinothk.chat.ui.style1.ChatBean;
 import com.sinothk.chat.ui.style1.LogUtil;
-import com.sinothk.chat.ui.style1.SimpleChatAdapter;
 
 import java.util.ArrayList;
 

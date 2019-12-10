@@ -1,4 +1,4 @@
-package com.sinothk.chat.ui.style1;
+package com.sinothk.chat.ui.demo;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -8,8 +8,8 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.sinothk.chat.ui.R;
 import com.sinothk.chat.ui.keyboard.utils.EmoticonLoader;
+import com.sinothk.chat.ui.style1.ChatBean;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -52,29 +52,29 @@ public class SimpleChatAdapter extends BaseAdapter {
         TextView tvTextMsg;
 
         public ViewHolder(View view) {
-            ivEmoticon = (ImageView)view.findViewById(R.id.item_image);
-            tvTextMsg = (TextView)view.findViewById(R.id.item_text);
+            ivEmoticon = (ImageView) view.findViewById(R.id.item_image);
+            tvTextMsg = (TextView) view.findViewById(R.id.item_text);
         }
     }
 
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
         ViewHolder viewHolder;
-        if ( view == null ) {
-            view = LayoutInflater.from(mContext).inflate(R.layout.style_1_item_list, viewGroup, false);
+        if (view == null) {
+            view = LayoutInflater.from(mContext).inflate(R.layout.item_list, viewGroup, false);
             viewHolder = new ViewHolder(view);
             view.setTag(viewHolder);
         } else {
-            viewHolder = (ViewHolder)view.getTag();
+            viewHolder = (ViewHolder) view.getTag();
         }
-        if ( getItem(i).getTag() != null ) {
+        if (getItem(i).getTag() != null) {
             viewHolder.ivEmoticon.setVisibility(View.VISIBLE);
             viewHolder.ivEmoticon.setImageDrawable(EmoticonLoader.getInstance(mContext).getDrawableByTag(getItem(i).getTag()));
         } else {
             viewHolder.ivEmoticon.setVisibility(View.GONE);
         }
 
-        if ( getItem(i).getTextMsg() != null ) {
+        if (getItem(i).getTextMsg() != null) {
             viewHolder.tvTextMsg.setVisibility(View.VISIBLE);
             viewHolder.tvTextMsg.setText(getItem(i).getTextMsg());
         } else {
