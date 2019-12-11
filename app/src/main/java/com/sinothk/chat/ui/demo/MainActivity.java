@@ -24,6 +24,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener, MediaBean
         .MediaListener, ChatKeyboardLayout.OnChatKeyBoardListener {
+
     private static final int PERMISSION_REQUEST_CODE = 0;
     private ChatKeyboardLayout keyboardLayout = null;
     private SimpleChatAdapter mAdapter;
