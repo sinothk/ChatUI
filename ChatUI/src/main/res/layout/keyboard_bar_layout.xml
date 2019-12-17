@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_alignParentBottom="true"
     android:background="@color/keyboard_white"
     android:orientation="vertical">
@@ -30,13 +30,13 @@
 
         <RelativeLayout
             android:id="@+id/rl_multi_and_send"
-            android:layout_width="36dp"
-            android:layout_height="28dp"
+            android:layout_width="56dp"
+            android:layout_height="32dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:layout_marginEnd="4dp"
-            android:layout_marginRight="4dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
             android:focusableInTouchMode="true">
 
             <ImageView
@@ -50,13 +50,13 @@
             <Button
                 android:id="@+id/view_keyboard_send_button"
                 android:layout_width="match_parent"
-                android:layout_height="32dp"
+                android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:background="@drawable/send_button_bg"
                 android:gravity="center"
-                android:text="@string/btn_text_send"
+                android:text="发送"
                 android:textColor="@color/keyboard_white"
-                android:textSize="12sp" />
+                android:textSize="15sp" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -88,37 +88,37 @@
 
                 <com.sinothk.chat.ui.keyboard.view.HadEditText
                     android:id="@+id/et_chat"
-                    tools:text="你好 。。。"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="6dp"
-                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="8dp"
                     android:layout_weight="1"
                     android:background="@drawable/im_input_bg"
                     android:focusable="true"
                     android:focusableInTouchMode="false"
                     android:lineSpacingExtra="4dp"
                     android:maxLines="4"
-                    android:minHeight="46dp"
+                    android:minHeight="40dp"
                     android:paddingStart="16dp"
                     android:paddingLeft="16dp"
                     android:paddingEnd="16dp"
                     android:paddingRight="16dp"
                     android:textColor="#888888"
                     android:textColorHint="@color/keyboard_edit_text_hint"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    tools:text="你好 。。。" />
 
                 <ImageView
                     android:id="@+id/view_keyboard_face_icon"
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginStart="12dp"
-                    android:layout_marginLeft="12dp"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginRight="8dp"
+                    android:paddingStart="2dp"
+                    android:paddingEnd="12dp"
                     android:scaleType="centerInside"
-                    android:src="@drawable/keyboard_face_icon" />
+                    android:src="@drawable/keyboard_face_icon"
+                    android:visibility="visible" />
             </LinearLayout>
         </RelativeLayout>
     </RelativeLayout>

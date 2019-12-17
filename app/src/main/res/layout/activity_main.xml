@@ -19,7 +19,7 @@
         app:leftDefaultIcon="@drawable/voice"
         app:leftSecondIcon="@drawable/keyboard"
         app:rightIcon="@drawable/addpic"
-        app:sendButtonBackground="#3F87FF"
+        app:sendButtonBackground="@drawable/send_button_bg"
         app:sendButtonTextColor="#FFFFFF"
         app:showRightIcon="true">
 
